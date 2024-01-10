@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aclonica', sans-serif;
+}
+
+nav {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    background-color: #F6FFFF;
+    position:fixed;
+    z-index: 1;
+}
+nav a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navContainer {
+    display: flex;
+    width: 279px;
+    justify-content: space-between;
+}
+.navContainer h2 {
+    font-size: 24px;
+}
+
+.hero {
+    height: 720px;
+    display: grid;
+    place-content: center;
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.heroContainer {
+    height: 494px;
+    display: flex;
+}
+.heroOne {
+    /* height: 494px; */
+    width: 494px;
+    height: auto;
+    background-image: url(./assets/hero-bear.png);
+}
+.heroTwo {
+    /* height: 494px; */
+    width: 594px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0px;
+    text-align: center;
+}
+.heroTwo .text h1 {
+    font-size: 52px;
+    line-height: 78px;
+}
+.btn button {
+    width: 208px;
+    height: 66px;
+    background-color: #E97451;
+    color: #FFF;
+    font-family: inherit;
+    font-size: 28px;
+    border-radius: 100px;
+    border: none;
+}
+.socials {
+    width: 220px;
+    height: auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.herocontainerTwo {
+    height: 800px;
+    background-image: url(./assets/Tokenomics-dark-bg.png);
+    background-repeat: no-repeat;
+    background-color: #CBEFA3;
+    display: grid;
+    place-content: center;
+    position: relative;
+    background-size: contain;
+}
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+}
+.boxOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.boxOne h1 {
+    font-size: 52px;
+    color: #252322;
+}
+.boxOne h3 {
+    font-size: 28px;
+    color:  #F8F7F7;
+}
+.boxOne p {
+    font-size: 44px;
+    color: #252322;
+}
+.boxOne p span {
+    font-size: 20px;
+}
+.boxOne .gray p{
+    padding-top: 20px;
+    color: #736B68;
+    font-size: 20px;
+}
+.empty {
+    position: relative;
+}
+.empty .bc img{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+.herocontainerTwo .purple img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.boxTwo {
+    background: url(./assets/Tokenomics-bear.png) no-repeat center;
+    position: relative;
+}
+.boxTwo .tr img {
+    position: absolute;
+    right: -30%;
+    
+}
+
+.boxTwo .bl img {
+    position: absolute;
+    left: -30%;
+    bottom: 10%;
+}
+
+.containerThree {
+    display: flex;
+    flex-direction: column;
+    background: url(./assets/bg-gs.png) no-repeat;
+    background-color: #CBEFA3;
+    height: auto;
+    gap: 120px;
+    padding: 80px 120px 80px 175px;
+    position: relative;
+    background-size: cover;
+}
+/* .containerThree .head {
+    position: relative;
+} */
+.containerThree .head .fb img {
+    position: absolute;
+    top: -15%;
+}
+
+.containerThree .head h1 {
+    font-size: 52px;
+    text-align: center;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(219px, auto);
+    gap: 1rem;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #F8F7F7;
+}
+.top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.top h2{
+    font-size: 32px;
+}
+.top h2 span {
+    color: #E97451;
+}
+.boxes .content p {
+    font-size: 1.5rem;
+    line-height: 43px;
+}
+.last h2 {
+    color: #252322;
+}
+.three .content p {
+    color: #4E4846;
+}
+.mid {
+    position: relative;
+}
+.mid .arrow1 {
+    position: absolute;
+    bottom: 0;
+}
+.mid .arrow2 {
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+}
+
+footer {
+    background-color: #CBEFA3;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerContainer {
+    background-color: #F9FAFB;
+    width: 80%;
+    height: 96px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+.fText {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D2739;
+}
+
+.content img {
+    position: absolute;
+    left: 5%;
+    top: 13%;
+}
