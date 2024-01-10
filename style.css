@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Aclonica', sans-serif;
 }
@@ -79,7 +81,15 @@ nav a, a:active, a:hover, a:visited {
     font-size: 28px;
     border-radius: 100px;
     border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
+
+.btn button:hover{
+    background-color: white;
+    color:#E97451;
+}
+
 .socials {
     width: 220px;
     height: auto;
